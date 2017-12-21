@@ -43,7 +43,7 @@
 > web3.eth.getBalance(web3.eth.accounts[0])
 0
 ```
-可以通过挖矿的方式给第一个账号发行ether：
+开启挖矿，start参数是进程数量，可以设置`miner.setEtherbase(eth.accounts[n])`矿工账号：
 ```
 > miner.start(1)
 I0822 17:17:43.496826 miner/miner.go:119] Starting mining operation (CPU=1 TOT=3)
